@@ -52,7 +52,6 @@ Randy
 - Render API 2
 - Render API 2
 
-
 # Links to APIs
 https://www.colr.org/json/color/random
 
@@ -61,15 +60,12 @@ https://api.nasa.gov/planetary/apod
 # Repo
 Change default to protect main
 
-
-
 Backup plan
 ## Color
 - Use color API to format specific part of the page
   - Background
   - Border
   - Text
-
 
 ## API 2 Option 2
   Thinking of taking output of Nasa API and perform additional search either using Google or Twitter
