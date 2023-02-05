@@ -1,0 +1,8 @@
+.headerSection{
+    display: flex;
+}
+
+.headerEl{
+    text-align: center;
+    font-family: 'Itim', cursive;
+}
