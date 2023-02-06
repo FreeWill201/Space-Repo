@@ -6,3 +6,14 @@
     text-align: center;
     font-family: 'Itim', cursive;
 }
+
+#root{
+    position: absolute;
+}
+
+
+.mainBody{
+    background-image: url(./images/nightSky3.jpg);
+    display: flex;
+    background-size: cover;
+}
