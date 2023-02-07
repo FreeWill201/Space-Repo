@@ -14,7 +14,7 @@
 
 
 .mainBody{
-    background-image: url(./images/nightSky3.jpg);
+    background-image: url("../images/nightsky3.jpg");
     display: flex;
     
     background-size: cover;
