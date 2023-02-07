@@ -1,19 +1,18 @@
 *{
     color: aliceblue;
+    position: relative;
 }
 
 .headerSection{
     display: flex;
+    text-align: center;
 }
 
 .headerEl{
+    display: block;
+    flex-direction: column;
     text-align: center;
     font-family: 'Itim', cursive;
-}
-
-
-#root{
-    position: absolute;
 }
 
 
