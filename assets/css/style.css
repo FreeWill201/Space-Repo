@@ -7,6 +7,15 @@
     font-family: 'Itim', cursive;
 }
 
-#datePicker{
-    
+
+#root{
+    position: absolute;
 }
+
+
+.mainBody{
+    background-image: url(./images/nightSky3.jpg);
+    display: flex;
+    
+    background-size: cover;
+
