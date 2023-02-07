@@ -11,6 +11,7 @@
     font-family: 'Itim', cursive;
 }
 
+
 #root{
     position: absolute;
 }
@@ -22,18 +23,3 @@
     
     background-size: cover;
 
-}
-
-#mainNameheader{
-    display: block;
-    background-color: wheat;
-}
-
-#pictureOftheDay{
-    background-color: wheat;
-
-}
-
-.card-section {
-    color: black;
-}
