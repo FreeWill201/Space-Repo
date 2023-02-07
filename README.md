@@ -1,23 +1,38 @@
 # Project
-## API 1
+# API 1
+## Original Concept
+Generate a picture of space (for now) using Nasa API with description and author information, if time allows possibly allow user to pick from calendar to pull back a specific picture 
 
-### Phase 1
-Generate a picture of space (for now) using Nasa API with description and author information, if time allows possibly allow user to pick from calendar to pull back a specific picture
+## Link
+https://api.nasa.gov/planetary/apod
 
-### Phase 2 
-Date picker (does it need to be limited)
-Handle with if statement
+### Current Functionality
+- API Call
+  - When user loads page a API call is done using todays date.
+  - When user selects a date from the date picker and clicks the button a new API call is done to get that days picture
+- Date picker
+  - Loads current date when page loads
+  - Limits users from picking dates in the future
+
+### Nasa API Notes
+- Code to render this API to webpage needs to be done within the if statement of the API call
+- Need to introduce error message windows and replace any alerts
+- Handle errors with if statement
 
 # API 2 Space Flight News
 - Space Flight News (brings back 10 articles for today)
+
+
+# Links to APIs
+https://www.colr.org/json/color/random
 https://api.spaceflightnewsapi.net/v3/articles
 
-## Local Storage
+# Local Storage
 - Theme preference
 - Store dates
 - Store image that user saved, link to image would be stored
 
-# Project
+# Project Breakdown
 Index.html
 Css
 - Css framework
@@ -35,8 +50,8 @@ Javascript
 
 # Whos doing what
 Arlindo
-- API call 1
-- Local Storage
+- API call 1 (Completed)
+- Local Storage (need to determine functionality)
 
 Ollie
 - Design
@@ -52,10 +67,8 @@ Randy
 - Render API 2
 - Render API 2
 
-# Links to APIs
-https://www.colr.org/json/color/random
 
-https://api.nasa.gov/planetary/apod
+
 
 # Repo
 Change default to protect main
