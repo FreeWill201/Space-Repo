@@ -1,7 +1,13 @@
 // Page Elements listed here
 getNewImageBtnEl = document.querySelector(".get-new-img-btn");
 getUserDateEl = document.getElementById("datepicker");
-//console.log("🚀 ~ file: script.js:4 ~ getUserDateEl", getUserDateEl);
+
+// Rendering API elements
+nasaApiTitleEl = document.getElementById("nasa-api-title");
+nasaApiExplanationEl = document.getElementById("nasa-api-explanation");
+nasaApiCopyrightEl = document.getElementById("nasa-api-copyright");
+nasaApiImgEl = document.getElementById("nasa-api-img");
+nasaApiLinkEl = document.getElementById("nasa-api-link");
 
 // Dayjs Date Formats
 var currentDate = dayjs().format("YYYY-MM-DD");
@@ -24,12 +30,17 @@ var nasaPicofDay = function () {
         var nasaImgExplanation = data.explanation;
         var nasaImgUrl = data.url;
         var nasaImgCopyrigth = data.copyright;
-        // Console logs to test that the API returns all data elements, delete when implemented
+        // Renders results from API to page
         console.log("Date: " + nasaImgDate);
-        console.log("Title: " + nasaImgTitle);
-        console.log("Explanation: " + nasaImgExplanation);
+        nasaApiTitleEl.textContent = nasaImgTitle;
+        nasaApiExplanationEl.textContent = nasaImgExplanation;
+        nasaApiCopyrightEl.textContent = nasaImgCopyrigth;
+        nasaApiImgEl.src = nasaImgUrl;
+        nasaApiLinkEl.setAttribute("href",nasaImgUrl)
+        
+        
         console.log("Url: " + nasaImgUrl);
-        console.log("Copyright: " + nasaImgCopyrigth);
+        //console.log("Copyright: " + nasaImgCopyrigth);
       });
     } else {
       alert(
