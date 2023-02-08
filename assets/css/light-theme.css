@@ -1,6 +1,6 @@
 * {
   color: silver;
-  
+  text-shadow: 2px 2px 1.5px rgb(49, 227, 236), 15 15 5em rgb(140, 140, 244), 5 5 2em rgb(115, 115, 255);
   background-image: url("../images/lightThemeSpace.jpg");
   background-repeat: no-repeat;
   background-size: cover;
