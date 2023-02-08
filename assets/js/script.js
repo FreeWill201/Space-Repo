@@ -9,6 +9,13 @@ nasaApiCopyrightEl = document.getElementById("nasa-api-copyright");
 nasaApiImgEl = document.getElementById("nasa-api-img");
 nasaApiLinkEl = document.getElementById("nasa-api-link");
 
+// Rendering API 2, SpaceNews, Elements
+spaceNewsTitleEl = document.getElementById("SpaceNews-Article-Title");
+console.log(spaceNewsTitleEl);
+spaceNewsDateEl = document.getElementById("SpaceNews-API-Date");
+spaceNewsUrlEl = document.getElementById("SpaceNews-URL");
+spaceNewsSummaryEl = document.getElementById("SpaceNews-API-Summary");
+
 // Dayjs Date Formats
 var currentDate = dayjs().format("YYYY-MM-DD");
 
@@ -36,10 +43,15 @@ var nasaPicofDay = function () {
         nasaApiExplanationEl.textContent = nasaImgExplanation;
         nasaApiCopyrightEl.textContent = nasaImgCopyrigth;
         nasaApiImgEl.src = nasaImgUrl;
-        nasaApiLinkEl.setAttribute("href",nasaImgUrl)
+
+        nasaApiLinkEl.setAttribute("href", nasaImgUrl);
+
+        console.log("Url: " + nasaImgUrl);
+
+    
         
         
-        //console.log("Url: " + nasaImgUrl);
+
         //console.log("Copyright: " + nasaImgCopyrigth);
       });
     } else {
@@ -80,10 +92,17 @@ var SpaceNews = function () {
           var ArticleUrl = article.url;
           var Articlesummary = article.summary;
           // Console log to ensure variables are functional
-          // console.log("Title: " + ArticleTitle);
-          // console.log("Date: " + ArticleupdatedAt);
-          // console.log("Url: " + ArticleUrl);
-          // console.log("Summary: " + Articlesummary);
+
+          console.log("Title: " + ArticleTitle);
+          spaceNewsTitleEl.textContent = ArticleTitle;
+          console.log("Date: " + ArticleupdatedAt);
+          spaceNewsDateEl.textContent = ArticleupdatedAt;
+          console.log("Url: " + ArticleUrl);
+          spaceNewsTitleEl.setAttribute("href", ArticleUrl);
+          console.log("Summary: " + Articlesummary);
+          spaceNewsSummaryEl.textContent = Articlesummary;
+
+
         }
       });
     } else {
