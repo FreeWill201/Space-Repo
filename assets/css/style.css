@@ -1,56 +1,84 @@
 *{
     color: lightsteelblue;
     position: relative;
+    background-repeat: no-repeat;
+
 }
 
 .headerSection{
-    display: flex;
     text-align: center;
     font-family: 'Oswald', sans-serif;
 }
 
 .headerEl{
-
-    display: flex;
     justify-content: center;
     text-align: center;
     font-family: 'Itim', cursive;
+    font-size: 50px;
+    color: #fff;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
 }
 
 .cell{
     background-blend-mode: hard-light;
-    
     text-align: left;
     font-family: 'Itim', cursive;
 }
 
 .card{
-    cursor: help;
-    background-color: rgb(109, 121, 137);
     font-family: 'Itim', cursive;
 }
 
 .mainBody{
-    background-image: url("../images/nightsky3.jpg");
     filter: hue-rotate(90deg);
-    display: flex;
-    background-size: cover;
     text-shadow: 1px 1px 1.5px rgb(255, 255, 255), 0 0 1em rgb(28, 28, 141), 0 0 0.2em blue;
 }
 
-.media-object-group{
-    padding: 15px;
-    margin: 15px;    
+/* .media-object-group{
+  
 }
 
-#headerEl2{
-    padding-top: 185px;
+.card-divider{
+
+}
+
+#card-date{
+
+}
+
+.button{
+
+} */
+
+.date-selected{
+    color: white;
+}
+
+#switch-btn{
+    display: flex;
+    justify-content: center;
+    background-color: silver;
+    border: 10px;
+    border-color: black;
+    border-radius: 10px;
 }
 
 #nasa-api-explanation{
     text-align: left;
-    display: flex;
-    text-shadow: #9aa9ff 1px 1px 1px, 5 1px;
+
 }
 
 #nasa-api-img{
@@ -59,16 +87,15 @@
 
 #card-header{
     font-family: 'Itim', cursive;
-    text-decoration: wavy;
-    text-shadow: 50px 10px, black;
 }
 
-#card-date{
-    padding-left: 15px;
-    margin-left: 25px;
-}
+
 
 #footer{
     display: block;
     text-align: center;
+}
+
+#nasa-api-explanation{
+    cursor: help;
 }
