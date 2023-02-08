@@ -21,20 +21,26 @@
 }
 
 .card{
-    cursor: help;
-    background-color: rgb(109, 121, 137);
     font-family: 'Itim', cursive;
 }
 
 .mainBody{
     filter: hue-rotate(90deg);
-    background-size: cover;
+
     text-shadow: 1px 1px 1.5px rgb(255, 255, 255), 0 0 1em rgb(28, 28, 141), 0 0 0.2em blue;
 }
 
 .media-object-group{
     padding: 15px;
     margin: 15px;    
+}
+
+.card-divider{
+    background:none;
+}
+
+.date-selected{
+    color: white;
 }
 
 .button{
@@ -44,12 +50,15 @@
 #switch-btn{
     display: flex;
     justify-content: center;
+    background-color: silver;
+    border: 10px;
+    border-color: black;
+    border-radius: 10px;
 }
 
 #nasa-api-explanation{
     text-align: left;
-    display: flex;
-    text-shadow: #9aa9ff 1px 1px 1px, 5 1px;
+
 }
 
 #nasa-api-img{
@@ -58,13 +67,10 @@
 
 #card-header{
     font-family: 'Itim', cursive;
-    text-decoration: wavy;
-    text-shadow: 50px 10px, black;
 }
 
 #card-date{
-    padding-left: 15px;
-    margin-left: 25px;
+
 }
 
 #footer{
@@ -72,3 +78,6 @@
     text-align: center;
 }
 
+#nasa-api-explanation{
+    cursor: help;
+}

@@ -1,5 +1,6 @@
 * {
   color: silver;
   background-color: white;
-  background-image: url(../images/lightThemeSpace.jpg);
+  background-image: url("../images/lightThemeSpace.jpg");
+  background-size: cover;
 }
