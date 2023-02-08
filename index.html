@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" id="root">
+<html lang="en" class="root">
 <head class= "headerSection">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+    <header>
+      <h1 class="headerEl">Nasa API Image Generator</h1>
+    </header>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <!-- css framework link goes here -->
   <link rel="stylesheet" 
@@ -20,25 +23,32 @@
   <!-- framework link goes here  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
   <!-- link custom css -->
-  <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+  <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/datepicker.css">
+  <link id = "theme-switcher" rel="stylesheet" href="./assets/css/dark-theme.css">
+  <header>
+    <div id="switch-btn" class="button large"></div>
+</header>
 </head>
 <body class="mainBody" >
-  <header>
-    <h1 class="headerEl">THIS IS A TEST HEADER</h1>
-  </header>
-  <div class="grid-x">
+
+<div class="grid-x margin-x fluid">
     <!-- left SIDE OF PAGE -->
     <div class="cell large-8">
+
         <h2>News</h2>
         <!-- Article 1 Beginning-->
       <div class="media-object">
+
+ 
+
         <div class="media-object-section align-self-top">
           <div class="thumbnail">
             <img src= "https://get.foundation/sites/docs/assets/img/media-object/avatar-2.jpg">
           </div>
         </div>
         <div class="media-object-section main-section">
+
          <h4><a href="" id="SpaceNews-Article-Title"></a></h4>
           <div class="cell large-4">
             <div class="card">
@@ -146,18 +156,19 @@
   </div>
 </div>
 <!-- Article 5 End -->
+
     <!-- news card ends here -->
     </div>
     <!-- RIGHT SIDE OF PAGE -->
     <div class="cell large-4">
       <div class="card">
           <div class="card-divider">
-            Image of Day
+            <h3 id="card-header">Image of Day</h3>
           </div>
           <a id="nasa-api-link" href="#"><img id="nasa-api-img" src=""></a>
           <br>
           <div class="grid-x">
-            <div class="cell large-4"> Date:</div>
+            <div class="cell large-4"> <p id="card-date">Date:</p></div>
             <input type="text" id="datepicker" class="date-selected cell large-4">
             <button class="button get-new-img-btn cell large-4">Get New Image</button>
           </div>
@@ -170,6 +181,9 @@
   </div>
   <!-- Footer section -->
   <footer>
+    <section>
+      <h3 id="footer">Group 8</h3>
+    </section>
   </footer>
 
   <!-- Third Party scripts no other contend below this    -->
@@ -186,6 +200,7 @@
     <!-- link custom .js code, load them in order of importance -->
   <script src="./assets/js/datepicker.js"></script>
   <script src="./assets/js/script.js"></script>    
+  <script src="./assets/js/theme.js"></script>
 </body>
 </html>
 

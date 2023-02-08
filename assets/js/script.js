@@ -38,14 +38,20 @@ var nasaPicofDay = function () {
         var nasaImgUrl = data.url;
         var nasaImgCopyrigth = data.copyright;
         // Renders results from API to page
-        console.log("Date: " + nasaImgDate);
+        //console.log("Date: " + nasaImgDate);
         nasaApiTitleEl.textContent = nasaImgTitle;
         nasaApiExplanationEl.textContent = nasaImgExplanation;
         nasaApiCopyrightEl.textContent = nasaImgCopyrigth;
         nasaApiImgEl.src = nasaImgUrl;
+
         nasaApiLinkEl.setAttribute("href", nasaImgUrl);
 
         console.log("Url: " + nasaImgUrl);
+
+    
+        
+        
+
         //console.log("Copyright: " + nasaImgCopyrigth);
       });
     } else {
@@ -78,7 +84,7 @@ var SpaceNews = function () {
   fetch(api_url).then(function (response) {
     if (response.ok) {
       response.json().then(function (data) {
-        console.log(data);
+        //console.log(data);
         for (var i = 0; i < data.length; i++) {
           var article = data[i];
           var ArticleTitle = article.title;
@@ -86,6 +92,7 @@ var SpaceNews = function () {
           var ArticleUrl = article.url;
           var Articlesummary = article.summary;
           // Console log to ensure variables are functional
+
           console.log("Title: " + ArticleTitle);
           spaceNewsTitleEl.textContent = ArticleTitle;
           console.log("Date: " + ArticleupdatedAt);
@@ -94,6 +101,8 @@ var SpaceNews = function () {
           spaceNewsTitleEl.setAttribute("href", ArticleUrl);
           console.log("Summary: " + Articlesummary);
           spaceNewsSummaryEl.textContent = Articlesummary;
+
+
         }
       });
     } else {
