@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+    <header>
+      <h1 class="headerEl">Nasa API image Generator</h1>
+    </header>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <!-- css framework link goes here -->
   <link rel="stylesheet" 
@@ -20,18 +23,15 @@
   <!-- framework link goes here  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
   <!-- link custom css -->
-  <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+  <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/datepicker.css">
 </head>
 <body class="mainBody" >
-  <header>
-    <h1 class="headerEl">THIS IS A TEST HEADER</h1>
-  </header>
-  <div class="grid-x">
+  <div class="grid-x margin-x fluid">
     <!-- left SIDE OF PAGE -->
     <div class="cell large-8">
-        <h2>News</h2>
-      <div class="media-object">
+        <h2 id="headerEl2">News</h2>
+      <div id="media-object-0">
         <div class="media-object-section align-self-top">
           <div class="thumbnail">
             <img src= "https://get.foundation/sites/docs/assets/img/media-object/avatar-2.jpg">
@@ -40,10 +40,9 @@
         <div class="media-object-section main-section">
           <h4>Why is it so important to dream?</h4>
           <p>So, once we've made the plant, how do we go out? Hope you have something more elegant in mind than shooting me in the head? A kick. What's a kick? This, Ariadne, would be a kick.</p>
-          <p>What is the most resilient parasite? Bacteria? A virus? An intestinal worm? An idea. Resilient... highly contagious. Once an idea has taken hold of the brain it's almost impossible to eradicate. An idea that is fully formed - fully understood - that sticks; right in there somewhere.</p>
         </div>
       </div>
-      <div class="media-object">
+      <div id="media-object-1">
         <div class="media-object-section align-self-top">
           <div class="thumbnail">
             <img src= "https://get.foundation/sites/docs/assets/img/media-object/avatar-2.jpg">
@@ -52,10 +51,9 @@
         <div class="media-object-section main-section">
           <h4>Why is it so important to dream?</h4>
           <p>So, once we've made the plant, how do we go out? Hope you have something more elegant in mind than shooting me in the head? A kick. What's a kick? This, Ariadne, would be a kick.</p>
-          <p>What is the most resilient parasite? Bacteria? A virus? An intestinal worm? An idea. Resilient... highly contagious. Once an idea has taken hold of the brain it's almost impossible to eradicate. An idea that is fully formed - fully understood - that sticks; right in there somewhere.</p>
         </div>
       </div>
-      <div class="media-object">
+      <div id="media-object-2">
         <div class="media-object-section align-self-top">
           <div class="thumbnail">
             <img src= "https://get.foundation/sites/docs/assets/img/media-object/avatar-2.jpg">
@@ -64,10 +62,9 @@
         <div class="media-object-section main-section">
           <h4>Why is it so important to dream?</h4>
           <p>So, once we've made the plant, how do we go out? Hope you have something more elegant in mind than shooting me in the head? A kick. What's a kick? This, Ariadne, would be a kick.</p>
-          <p>What is the most resilient parasite? Bacteria? A virus? An intestinal worm? An idea. Resilient... highly contagious. Once an idea has taken hold of the brain it's almost impossible to eradicate. An idea that is fully formed - fully understood - that sticks; right in there somewhere.</p>
         </div>
       </div>
-      <div class="media-object">
+      <div id="media-object-3">
         <div class="media-object-section align-self-top">
           <div class="thumbnail">
             <img src= "https://get.foundation/sites/docs/assets/img/media-object/avatar-2.jpg">
@@ -76,10 +73,9 @@
         <div class="media-object-section main-section">
           <h4>Why is it so important to dream?</h4>
           <p>So, once we've made the plant, how do we go out? Hope you have something more elegant in mind than shooting me in the head? A kick. What's a kick? This, Ariadne, would be a kick.</p>
-          <p>What is the most resilient parasite? Bacteria? A virus? An intestinal worm? An idea. Resilient... highly contagious. Once an idea has taken hold of the brain it's almost impossible to eradicate. An idea that is fully formed - fully understood - that sticks; right in there somewhere.</p>
         </div>
       </div>
-      <div class="media-object">
+      <div id="media-object-4">
         <div class="media-object-section align-self-top">
           <div class="thumbnail">
             <img src= "https://get.foundation/sites/docs/assets/img/media-object/avatar-2.jpg">
@@ -88,7 +84,6 @@
         <div class="media-object-section main-section">
           <h4>Why is it so important to dream?</h4>
           <p>So, once we've made the plant, how do we go out? Hope you have something more elegant in mind than shooting me in the head? A kick. What's a kick? This, Ariadne, would be a kick.</p>
-          <p>What is the most resilient parasite? Bacteria? A virus? An intestinal worm? An idea. Resilient... highly contagious. Once an idea has taken hold of the brain it's almost impossible to eradicate. An idea that is fully formed - fully understood - that sticks; right in there somewhere.</p>
         </div>
       </div>
     <!-- news card ends here -->
@@ -97,12 +92,12 @@
     <div class="cell large-4">
       <div class="card">
           <div class="card-divider">
-            Image of Day
+            <h3 id="card-header">Image of Day</h3>
           </div>
           <a id="nasa-api-link" href="#"><img id="nasa-api-img" src=""></a>
           <br>
           <div class="grid-x">
-            <div class="cell large-4"> Date:</div>
+            <div class="cell large-4"> <p id="card-date">Date:</p></div>
             <input type="text" id="datepicker" class="date-selected cell large-4">
             <button class="button get-new-img-btn cell large-4">Get New Image</button>
           </div>
@@ -115,6 +110,9 @@
   </div>
   <!-- Footer section -->
   <footer>
+    <section>
+      <h3 id="footer">Group 8</h3>
+    </section>
   </footer>
 
   <!-- Third Party scripts no other contend below this    -->
