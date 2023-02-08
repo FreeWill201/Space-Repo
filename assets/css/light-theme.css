@@ -1,6 +1,12 @@
 * {
   color: silver;
-  background-color: white;
+  
   background-image: url("../images/lightThemeSpace.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+}
+
+.root{
+
 }

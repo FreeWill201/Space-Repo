@@ -2,6 +2,8 @@
   color: white;
   background-image: url("../images/nightsky3.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
+  background-attachment: fixed;
 }
