@@ -1,0 +1,83 @@
+:root {
+  --font-family: "Inter", sans-serif;
+  --teal: #00adb5;
+  --dark: #1e1e1e;
+  --white: #eeeeee;
+  --gray: #393e46;
+  --dark-gray: #222831;
+  --light-gray: #dcdcdc;
+  --orange: #d2691e;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+}
+
+main,
+footer,
+header,
+section {
+  /* background-color: whitesmoke; */
+  padding: 10px;
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+}
+
+.thumbnail img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+header {
+  position: relative;
+  height: 371px;
+  background-color: black;
+}
+
+footer {
+  height: 300px;
+  margin-bottom: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+header #switch-btn {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  /* height: 100%; */
+}
+
+header h1 {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  color: aliceblue;
+  width: 600px;
+}
+
+nav .btn-1,
+nav .btn-2,
+nav .btn-3 {
+  position: absolute;
+  bottom: 0px;
+  width: 100px;
+}
+
+nav .btn-1 {
+  left: 10px;
+}
+
+nav .btn-2 {
+  left: 120px;
+}
+
+nav .btn-3 {
+  left: 230px;
+}
