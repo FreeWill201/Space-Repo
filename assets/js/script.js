@@ -9,8 +9,6 @@ nasaApiCopyrightEl = document.getElementById("nasa-api-copyright");
 nasaApiImgEl = document.getElementById("nasa-api-img");
 nasaApiLinkEl = document.getElementById("nasa-api-link");
 
-// Rendering API 2, SpaceNews, Elements
-
 // Dayjs Date Formats
 var currentDate = dayjs().format("YYYY-MM-DD");
 
@@ -26,24 +24,17 @@ var nasaPicofDay = function () {
   fetch(apiUrl).then(function (response) {
     if (response.ok) {
       response.json().then(function (data) {
-        // console.log(data);
-        var nasaImgDate = data.date;
+        // var nasaImgDate = data.date;
         var nasaImgTitle = data.title;
         var nasaImgExplanation = data.explanation;
         var nasaImgUrl = data.url;
         var nasaImgCopyrigth = data.copyright;
         // Renders results from API to page
-        //console.log("Date: " + nasaImgDate);
         nasaApiTitleEl.textContent = nasaImgTitle;
         nasaApiExplanationEl.textContent = nasaImgExplanation;
         nasaApiCopyrightEl.textContent = nasaImgCopyrigth;
         nasaApiImgEl.src = nasaImgUrl;
-
         nasaApiLinkEl.setAttribute("href", nasaImgUrl);
-
-        console.log("Url: " + nasaImgUrl);
-
-        //console.log("Copyright: " + nasaImgCopyrigth);
       });
     } else {
       alert(
@@ -58,7 +49,6 @@ function userSelectedDate(event) {
   event.preventDefault();
   var userDateValue = getUserDateEl.value;
   currentDate = userDateValue;
-  console.log("user selected:" + userDateValue);
   nasaPicofDay();
   return userDateValue;
 }
@@ -67,15 +57,11 @@ function userSelectedDate(event) {
 getNewImageBtnEl.addEventListener("click", userSelectedDate);
 
 // SpaceNews API Call
-// SpaceNews get your API Key here https://api.spaceflightnewsapi.net/v3/articles?_limit=5
-// Need image URl
-// Link variables in 65-68. Reference the entries. Need to do a loop to account for 5 articles
 var SpaceNews = function () {
   var api_url = "https://api.spaceflightnewsapi.net/v3/articles?_limit=5";
   fetch(api_url).then(function (response) {
     if (response.ok) {
       response.json().then(function (data) {
-        console.log(data);
         for (var i = 0; i < data.length; i++) {
           var article = data[i];
           var Articletitle = article.title;
@@ -99,16 +85,10 @@ var SpaceNews = function () {
           );
 
           // Console log to ensure variables are functional
-
-          console.log("Title: " + Articletitle);
           spaceNewsTitleEl.textContent = Articletitle;
-          console.log("Date: " + ArticlepublishedAt);
           spaceNewsDateEl.textContent = ArticlepublishedAt;
-          console.log("Url: " + ArticleUrl);
           spaceNewsUrlEl.setAttribute("href", ArticleUrl);
-          console.log("Summary: " + Articlesummary);
           spaceNewsSummaryEl.textContent = Articlesummary;
-          console.log("ImgUrl: " + ArticleimageUrl);
           spaceNewsImgUrlEl.setAttribute("src", ArticleimageUrl);
         }
       });
@@ -122,13 +102,6 @@ var SpaceNews = function () {
 
 // All Functions that run when page loads initially
 nasaPicofDay();
-
-// Api Function 2, Space News Render
 SpaceNews();
 
-// All of the below checkmarks only account for the first article and not yet the loop
-// Article Date, SpaceNews API-Call, check
-// Article Title, SpaceNews API-Call, check
-// Article Summary, SpaceNews API-Call, check
-// Article Url, Button Link, SpaceNews API-Call, check
-// Article Img, SpaceNews API-Call, check
+

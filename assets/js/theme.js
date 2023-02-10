@@ -1,6 +1,5 @@
 var themeSwitchBtnEl = document.getElementById('switch-btn');
 var themeSwitchLinkEl = document.getElementById('theme-switcher');
-
 var themeStyle = localStorage.getItem('theme');
 
 if (themeStyle === 'dark'|| themeStyle === null) {
@@ -17,7 +16,6 @@ function changeTheme() {
         themeSwitchLinkEl.href = './assets/css/light-theme.css';
         localStorage.setItem('theme', 'light');
         themeSwitchBtnEl.textContent = 'Dark Theme';
-        //console.log("theme changed to light");
     }
     else if (themeStyle === 'light') {
         themeSwitchLinkEl.href = './assets/css/dark-theme.css';
@@ -25,6 +23,4 @@ function changeTheme() {
         themeSwitchBtnEl.textContent = 'Light Theme';
     }
 };
-
-
 themeSwitchBtnEl.addEventListener('click',changeTheme);

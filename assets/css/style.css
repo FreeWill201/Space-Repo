@@ -21,33 +21,25 @@ section {
   padding: 10px;
 }
 
-.nasa-date-selector * {
-  padding: 0px;
-  text-align: center;
-  border: 0;
-  margin: auto;
-  height: 50px;
-  justify-content: center;
-}
-.nasa-date-selector h4 {
-  margin-top: 50px;
-}
-
-.thumbnail img {
-  max-width: 300px;
-  max-height: 300px;
-}
-
+/* header styling */
 header {
   position: relative;
   height: 371px;
   background-color: black;
 }
 
-footer {
-  height: 300px;
-  margin-bottom: 20px;
-  border-radius: 0 0 10px 10px;
+#site-name {
+  position: absolute;
+  font-size: 6rem;
+  top: 40px;
+  left: 50px;
+}
+
+#site-slogan {
+  position: absolute;
+  bottom: 180px;
+  left: 50px;
+  color: var(--teal);
 }
 
 header #switch-btn {
@@ -75,11 +67,66 @@ nav {
   bottom: 0px;
 }
 
+/* side panel */
+.nasa-date-selector * {
+  border: 0;
+  margin: 0;
+  height: 40px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.nasa-date-selector input:hover {
+  border: solid 2px red;
+  cursor: pointer;
+}
+
+/* articles */
+.thumbnail img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
 i {
-  font-size: 35px;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  padding: 0;
 }
 
 .card-divider h4 {
   text-align: center;
   padding-top: 5px;
+}
+
+/* footer */
+footer {
+  height: 300px;
+  margin-bottom: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+/* responsive queries */
+@media screen and (max-width: 800px) {
+  #site-name {
+    font-size: 2rem;
+    top: 10px;
+    left: 10px;
+    max-width: 300px;
+  }
+  header {
+    height: 150px;
+  }
+  .thumbnail img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  header img {
+    max-height: 150px;
+  }
+  #site-slogan {
+    bottom: 80px;
+    font-size: 10px;
+    left: 10px;
+  }
 }

@@ -19,7 +19,6 @@ aside {
   background-color: var(--gray);
 }
 
-.nasa-date-selector *,
 .card-divider {
   background-color: var(--gray);
   color: white;
