@@ -12,5 +12,15 @@ footer,
 header,
 section {
   background-color: whitesmoke;
-  color: var(--dark-gray);
+  color: var(--dark);
+}
+
+aside {
+  background-color: var(--light-gray);
+}
+
+.nasa-date-selector *,
+.card-divider {
+  background-color: var(--dark);
+  color: var(--white);
 }
