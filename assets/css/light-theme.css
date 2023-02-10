@@ -18,9 +18,3 @@ section {
 aside {
   background-color: var(--light-gray);
 }
-
-.nasa-date-selector *,
-.card-divider {
-  background-color: var(--dark);
-  color: var(--white);
-}
