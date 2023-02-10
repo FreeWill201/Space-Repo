@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <!-- css framework link goes here -->
     <link rel="stylesheet" 
@@ -11,19 +11,30 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/foundation-icons.css">
 
+
     <!-- font family will go here -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
 
     <!-- link custom css -->
-    <link rel="stylesheet" href="./assets/css/datepicker.css">
-    <link id = "theme-switcher" rel="stylesheet" href="./assets/css/dark-theme.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/datepicker.css" />
+    <link
+      id="theme-switcher"
+      rel="stylesheet"
+      href="./assets/css/dark-theme.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Space Repo 2</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
         <div class="cell large-6 medium-6">
             <img src="./assets/images/austronaut.jpeg" alt="">
@@ -37,106 +48,157 @@
         </div>
     </header>
     <section>
-        <br>
-        <div >
-          <h4>Overview</h4>
-          <p>Welcome to [Name of Website], your one-stop source for all things space! Whether you're a space enthusiast, a stargazer, or just curious about the universe, we've got you covered. From the latest missions and launches to groundbreaking discoveries and insights, we bring you the latest news and stories from the cosmos. Stay informed and explore the wonders of the universe with us!</p>
-        </div>
-        <hr>
+      <br />
+      <div>
+        <h4>Overview</h4>
+        <p>
+          Welcome to [Name of Website], your one-stop source for all things
+          space! Whether you're a space enthusiast, a stargazer, or just curious
+          about the universe, we've got you covered. From the latest missions
+          and launches to groundbreaking discoveries and insights, we bring you
+          the latest news and stories from the cosmos. Stay informed and explore
+          the wonders of the universe with us!
+        </p>
+      </div>
+      <hr />
     </section>
-    <section class="grid-x" id="news-section">
-        <!-- news articles -->
-        <main class="cell large-8">
-            <!-- article 1 -->
-            <article class="media-object">
-                <figure class="media-object-section align-self-top">
-                    <div class="thumbnail">
-                        <img src= "https://www.nasa.gov/sites/default/files/thumbnails/image/nasa_meatball_1.jpeg?itok=hHt8a7fl">
-                    </div>
-                </figure>
-                <div class="media-object-section main-section">
-                    <h3>NASA Awards Environmental Compliance, Operations Contract</h3>
-                    <p>NASA has selected Navarro Research and Engineering, Inc., of Oak Ridge, Tennessee, for the Environmental Compliance and Operations 3 (ECO3) contract, which provides environmental restoration program services and other support at the agency’s White Sands Test Facility in Las Cruces, New Mexico.</p>
-                    <p><small>Source: <span id="news-source">NASA</span> Published: <span id="date-id">2023-02-08T21:11:00.000Z</span></small></p>
-                    <a href="http://www.nasa.gov/press-release/nasa-awards-environmental-compliance-operations-contract" class="button tiny hollow" id="link">Open Article.</a>
-                </div>
-            </article>
-            <!-- article 2 -->
-            <article class="media-object">
-                <figure class="media-object-section align-self-right">
-                    <div class="thumbnail">
-                        <img src= "https://image.cnbcfm.com/api/v1/image/107182934-1674566336033-52621815136_50da618a63_k_1.jpg">
-                    </div>
-                </figure>
-                <div class="media-object-section main-section">
-                    <h3>SpaceX prepares for a massive test this week: Firing all 33 Starship engines at once</h3>
-                    <p>WASHINGTON - SpaceX President Gwynne Shotwell said Wednesday the company plans to attempt a major Starship milestone this week.</p>
-                    <p><small>Source: <span id="news-source">CNBC</span> Published: <span id="date-id">2023-02-08T21:11:00.000Z</span></small></p>
-                    <a href="https://www.cnbc.com/2023/02/08/spacex-prepares-test-fire-all-starship-engines-at-once.html" class="button tiny hollow" id="link">Open Article.</a>
-                </div>
-            </article>
-            <!-- article 3 -->
-            <article class="media-object">
-                <div class="media-object-section align-self-top">
-                    <div class="thumbnail">
-                        <img src= "https://www.nasa.gov/sites/default/files/thumbnails/image/nasa_meatball_1.jpg?itok=GPrBmBv4">
-                    </div>
-                </div>
-                <div class="media-object-section main-section">
-                    <h3>NASA Selects Scientific Support for Goddard Institute of Space Studies</h3>
-                    <p>NASA has selected Autonomic Integra of Gaithersburg, Maryland, for specialized scientific support services to the Goddard Institute for Space Studies (GISS) in New York.</p>
-                    <p><small>Source: <span id="news-source">NASA</span> Published: <span id="date-id">2023-02-08T21:11:00.000Z</span></small></p>
-                    <a href="http://www.nasa.gov/press-release/goddard/2023/nasa-selects-scientific-support-for-goddard-institute-of-space-studies" class="button tiny hollow" id="link">Open Article.</a>
-                </div>
-            </article>
-            <!-- article 4 -->
-            <article class="media-object">
-                <div class="media-object-section align-self-top">
-                    <div class="thumbnail">
-                        <img src= "https://www.nasa.gov/sites/default/files/thumbnails/image/nasa_meatball_1.jpg?itok=GPrBmBv4">
-                    </div>
-                </div>
-                <div class="media-object-section main-section">
-                    <h3>NASA Selects Scientific Support for Goddard Institute of Space Studies</h3>
-                    <p>NASA has selected Autonomic Integra of Gaithersburg, Maryland, for specialized scientific support services to the Goddard Institute for Space Studies (GISS) in New York.</p>
-                    <p><small>Source: <span id="news-source">NASA</span> Published: <span id="date-id">2023-02-08T21:11:00.000Z</span></small></p>
-                    <a href="http://www.nasa.gov/press-release/goddard/2023/nasa-selects-scientific-support-for-goddard-institute-of-space-studies" class="button tiny hollow" id="link">Open Article.</a>
-                </div>
-            </article>
-            <!-- article 5 -->
-            <article class="media-object">
-                <div class="media-object-section align-self-right">
-                    <div class="thumbnail">
-                        <img src= "https://image.cnbcfm.com/api/v1/image/107182934-1674566336033-52621815136_50da618a63_k_1.jpg">
-                    </div>
-                </div>
-                <div class="media-object-section main-section">
-                    <h3>SpaceX prepares for a massive test this week: Firing all 33 Starship engines at once</h3>
-                    <p>WASHINGTON – SpaceX President Gwynne Shotwell said Wednesday the company plans to attempt a major Starship milestone this week.</p>
-                    <p><small>Source: <span id="news-source">CNBC</span> Published: <span id="date-id">2023-02-08T21:11:00.000Z</span></small></p>
-                    <a href="https://www.cnbc.com/2023/02/08/spacex-prepares-test-fire-all-starship-engines-at-once.html" class="button tiny hollow" id="link">Open Article.</a>
-                </div>
-            </article>
-        </main>
-        <!-- Pic of day -->
-        <aside class="cell large-4 side-panel">
-            <div class="card-divider grid-x">
-              <i class="fi-photo cell large-2 small-2"></i>
-              <h4 id="card-header cell large-10">Featured Image</h4>
+
+    <section class="grid-x">
+      <!-- news articles -->
+      <main class="cell large-9">
+        <!-- Article 1 Working, append the articles with each class and id whenever you go through the for loop. Each time you run through the for loop-->
+        <!-- Option 1, Add a number to the end of the id. Change numbers for each element. Call a different id every time you run through the for loop-->
+        <!-- Option 2, have all of these different elements existing, appending the html elements every time you go through the for loop for each article-->
+        <article class="media-object">
+          <figure class="media-object-section align-self-top">
+            <div class="thumbnail">
+              <img id="SpaceNews-Img-Url0" src="" />
             </div>
-            <a id="nasa-api-link" href="#"><img id="nasa-api-img" src=""></a>
-            <!-- <hr> -->
-            <div class="grid-x nasa-date-selector">
-              <i class="fi-calendar cell large-2 small-2"></i>
-              <input type="text" id="datepicker" class="date-selected cell large-5 small-5">
-              <button class="get-new-img-btn cell large-5 small-5 large button">New Image</button>
+          </figure>
+          <div class="media-object-section main-section">
+            <h3 id="SpaceNews-Article-Title0">Title here</h3>
+            <p id="SpaceNews-API-Summary0">Summary Here</p>
+            <p>
+              <small
+                >Source: <span id="news-source">NASA</span> Published:
+                <span id="SpaceNews-API-Date0">Date Here</span></small
+              >
+            </p>
+            <a href="" class="button tiny hollow" id="SpaceNews-URL0"
+              >Open Article.</a
+            >
+          </div>
+        </article>
+        <!-- Article Updated means same format as Article 1 in html is applied-->
+        <!-- Article 2 Updated, Needs to account for loop-->
+        <article class="media-object">
+          <figure class="media-object-section align-self-top">
+            <div class="thumbnail">
+              <img id="SpaceNews-Img-Url1" src="" />
             </div>
-            <div class="card-section">
-              <h4 id="nasa-api-title"></h4>
-              <p id="nasa-api-explanation"></p>
-              <p>Copyright: <span id="nasa-api-copyright"></span></p>
+          </figure>
+          <div class="media-object-section main-section">
+            <h3 id="SpaceNews-Article-Title1">Title here</h3>
+            <p id="SpaceNews-API-Summary1">Summary Here</p>
+            <p>
+              <small
+                >Source: <span id="news-source">NASA</span> Published:
+                <span id="SpaceNews-API-Date1">Date Here</span></small
+              >
+            </p>
+            <a href="" class="button tiny hollow" id="SpaceNews-URL1"
+              >Open Article.</a
+            >
+          </div>
+        </article>
+        <!-- Article 3 Updated, Needs to account for loop-->
+        <article class="media-object">
+            <figure class="media-object-section align-self-top">
+              <div class="thumbnail">
+                <img id="SpaceNews-Img-Url2" src="" />
+              </div>
+            </figure>
+            <div class="media-object-section main-section">
+              <h3 id="SpaceNews-Article-Title2">Title here</h3>
+              <p id="SpaceNews-API-Summary2">Summary Here</p>
+              <p>
+                <small
+                  >Source: <span id="news-source">NASA</span> Published:
+                  <span id="SpaceNews-API-Date2">Date Here</span></small
+                >
+              </p>
+              <a href="" class="button tiny hollow" id="SpaceNews-URL2"
+                >Open Article.</a
+              >
+
             </div>
-        </aside>
+          </article>
+        <!-- Article 4 Updated, Needs to account for loop-->
+        <article class="media-object">
+            <figure class="media-object-section align-self-top">
+              <div class="thumbnail">
+                <img id="SpaceNews-Img-Url3" src="" />
+              </div>
+            </figure>
+            <div class="media-object-section main-section">
+              <h3 id="SpaceNews-Article-Title3">Title here</h3>
+              <p id="SpaceNews-API-Summary3">Summary Here</p>
+              <p>
+                <small
+                  >Source: <span id="news-source">NASA</span> Published:
+                  <span id="SpaceNews-API-Date3">Date Here</span></small
+                >
+              </p>
+              <a href="" class="button tiny hollow" id="SpaceNews-URL3"
+                >Open Article.</a
+              >
+            </div>
+          </article>
+        <!-- Article 5 Updated, needs to account for loop-->
+        <article class="media-object">
+            <figure class="media-object-section align-self-top">
+              <div class="thumbnail">
+                <img id="SpaceNews-Img-Url4" src="" />
+              </div>
+            </figure>
+            <div class="media-object-section main-section">
+              <h3 id="SpaceNews-Article-Title4">Title here</h3>
+              <p id="SpaceNews-API-Summary4">Summary Here</p>
+              <p>
+                <small
+                  >Source: <span id="news-source">NASA</span> Published:
+                  <span id="SpaceNews-API-Date4">Date Here</span></small
+                >
+              </p>
+              <a href="" class="button tiny hollow" id="SpaceNews-URL4"
+                >Open Article.</a
+              >
+            </div>
+          </article>
+      <!-- Pic of day -->
+      <aside class="cell large-3 side-panel">
+        <div class="card-divider">
+          <h3 id="card-header">Image of Day</h3>
+        </div>
+        <a id="nasa-api-link" href="#"><img id="nasa-api-img" src="" /></a>
+        <hr />
+        <div class="grid-x">
+          <div class="cell large-4"><p id="card-date">Date:</p></div>
+          <input
+            type="text"
+            id="datepicker"
+            class="date-selected cell large-4"
+          />
+          <button class="get-new-img-btn cell large-4 button secondary tiny">
+            New Image
+          </button>
+        </div>
+        <div class="card-section">
+          <h4 id="nasa-api-title"></h4>
+          <p id="nasa-api-explanation"></p>
+          <p>Copyright: <span id="nasa-api-copyright"></span></p>
+        </div>
+      </aside>
     </section>
     <footer id="contributors">
 
@@ -144,17 +206,18 @@
     <!-- Third Party scripts no other contend below this    -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script
-        src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-        crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js" 
-        crossorigin="anonymous">
-    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <!-- link custom .js code, load them in order of importance -->
     <script src="./assets/js/datepicker.js"></script>
-    <script src="./assets/js/script.js"></script>    
-    <script src="./assets/js/theme.js"></script>    
-</body>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/theme.js"></script>
+  </body>
 </html>
