@@ -10,11 +10,6 @@ nasaApiImgEl = document.getElementById("nasa-api-img");
 nasaApiLinkEl = document.getElementById("nasa-api-link");
 
 // Rendering API 2, SpaceNews, Elements
-spaceNewsTitleEl = document.getElementById("SpaceNews-Article-Title");
-console.log(spaceNewsTitleEl);
-spaceNewsDateEl = document.getElementById("SpaceNews-API-Date");
-spaceNewsUrlEl = document.getElementById("SpaceNews-URL");
-spaceNewsSummaryEl = document.getElementById("SpaceNews-API-Summary");
 
 // Dayjs Date Formats
 var currentDate = dayjs().format("YYYY-MM-DD");
@@ -48,10 +43,6 @@ var nasaPicofDay = function () {
 
         console.log("Url: " + nasaImgUrl);
 
-    
-        
-        
-
         //console.log("Copyright: " + nasaImgCopyrigth);
       });
     } else {
@@ -84,25 +75,41 @@ var SpaceNews = function () {
   fetch(api_url).then(function (response) {
     if (response.ok) {
       response.json().then(function (data) {
-        //console.log(data);
+        console.log(data);
         for (var i = 0; i < data.length; i++) {
           var article = data[i];
-          var ArticleTitle = article.title;
-          var ArticleupdatedAt = article.updatedAt;
+          var Articletitle = article.title;
+          var ArticlepublishedAt = article.publishedAt;
           var ArticleUrl = article.url;
           var Articlesummary = article.summary;
+          var ArticleimageUrl = article.imageUrl;
+          var spaceNewsTitleEl = document.getElementById(
+            "SpaceNews-Article-Title" + i
+          );
+
+          var spaceNewsDateEl = document.getElementById(
+            "SpaceNews-API-Date" + i
+          );
+          var spaceNewsUrlEl = document.getElementById("SpaceNews-URL" + i);
+          var spaceNewsSummaryEl = document.getElementById(
+            "SpaceNews-API-Summary" + i
+          );
+          var spaceNewsImgUrlEl = document.getElementById(
+            "SpaceNews-Img-Url" + i
+          );
+
           // Console log to ensure variables are functional
 
-          console.log("Title: " + ArticleTitle);
-          spaceNewsTitleEl.textContent = ArticleTitle;
-          console.log("Date: " + ArticleupdatedAt);
-          spaceNewsDateEl.textContent = ArticleupdatedAt;
+          console.log("Title: " + Articletitle);
+          spaceNewsTitleEl.textContent = Articletitle;
+          console.log("Date: " + ArticlepublishedAt);
+          spaceNewsDateEl.textContent = ArticlepublishedAt;
           console.log("Url: " + ArticleUrl);
-          spaceNewsTitleEl.setAttribute("href", ArticleUrl);
+          spaceNewsUrlEl.setAttribute("href", ArticleUrl);
           console.log("Summary: " + Articlesummary);
           spaceNewsSummaryEl.textContent = Articlesummary;
-
-
+          console.log("ImgUrl: " + ArticleimageUrl);
+          spaceNewsImgUrlEl.setAttribute("src", ArticleimageUrl);
         }
       });
     } else {
@@ -118,3 +125,10 @@ nasaPicofDay();
 
 // Api Function 2, Space News Render
 SpaceNews();
+
+// All of the below checkmarks only account for the first article and not yet the loop
+// Article Date, SpaceNews API-Call, check
+// Article Title, SpaceNews API-Call, check
+// Article Summary, SpaceNews API-Call, check
+// Article Url, Button Link, SpaceNews API-Call, check
+// Article Img, SpaceNews API-Call, check
