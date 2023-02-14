@@ -1,11 +1,15 @@
 # Astro News API Call Project
 
 
-# Link
+# Link to Webapge
 
 https://freewill201.github.io/Space-Repo/
 
-# Pictures Of Webpage
+# Link to Repo
+
+https://github.com/FreeWill201/Space-Repo
+
+# Picture Of Webpage
 
 - ![ Picture Of Webpage]( images/../assets/images/space-repo-image_720.jpg "Full Image Of Page")
 
@@ -23,7 +27,7 @@ The page is designed to allow someone to get a feel of Nasa's history through av
 
 # Credits
 
-Credits to Foundation, CSS, Jquery, Day.js, and Jquery Ui. Furthermore the page could not work without both Nasa's and SpaceNews's API avaiability. We also thank Full Stack, Google, Youtube, Github, and VS Code for making it possible to render our webpage as a fully finished product that accomplishes it's aims.
+Credits to Foundation, CSS, Jquery, Day.js, and Jquery Ui. Furthermore the page could not work without both Nasa's and SpaceNews's API availability. We also thank Full Stack, Google, Youtube, Github, and VS Code for making it possible to render our webpage as a fully finished product that accomplishes it's aims.
 
 # License 
 
@@ -33,6 +37,3 @@ MIT License
 
 Page has a fully interactive UI Calendar Feature that allows the user to select a specific date and receive back an image with a description of it. Also the image can be clicked on to enlarge it. Page display's five of the most recent articles from SpaceNews's Site each with a title, link, summary, article title related image and date published. Page also gives the user a choice of light or dark themes when viewing the webpage. 
 
-# Technology Used
-
-Foundation, CSS, Jquery, Github, Day.js, Jquery Ui.
