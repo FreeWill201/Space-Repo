@@ -86,7 +86,7 @@ var SpaceNews = function () {
 
           // Console log to ensure variables are functional
           spaceNewsTitleEl.textContent = Articletitle;
-          spaceNewsDateEl.textContent = ArticlepublishedAt;
+          spaceNewsDateEl.textContent = ArticlepublishedAt.substring(0, 10);
           spaceNewsUrlEl.setAttribute("href", ArticleUrl);
           spaceNewsSummaryEl.textContent = Articlesummary;
           spaceNewsImgUrlEl.setAttribute("src", ArticleimageUrl);
