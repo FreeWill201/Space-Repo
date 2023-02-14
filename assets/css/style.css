@@ -131,4 +131,8 @@ footer {
     font-size: 10px;
     left: 10px;
   }
+  nav {
+    display: none;
+    /* flex-direction: column; */
+  }
 }
