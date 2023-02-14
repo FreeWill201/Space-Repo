@@ -1,7 +1,7 @@
 # Astro News API Call Project
 
 
-# Link to Webapge
+# Link to Webpage
 
 https://freewill201.github.io/Space-Repo/
 
